@@ -1,0 +1,26 @@
+@import "../node_modules/bootstrap/scss/_functions";
+
+$primary: #c29938;
+$light: #fbf5e5;
+
+$custom-theme-colors: (
+    "altlight": #f2ebfa,
+    "altdark": #522192
+);
+
+@import "../node_modules/bootstrap/scss/_variables";
+
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.offcanvas {
+    z-index: 1051 !important;
+}
+
+.offcanvas-backdrop {
+    z-index: 1050 !important;
+}
